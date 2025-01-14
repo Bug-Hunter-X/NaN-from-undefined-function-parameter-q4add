@@ -1,0 +1,3 @@
+# Uncommon JavaScript Bug: NaN from undefined function parameter
+
+This repository demonstrates a subtle JavaScript bug related to handling `undefined` values as function parameters.  The `foo` function attempts to handle null values gracefully, but fails to explicitly handle `undefined`, resulting in `NaN` when `undefined` is passed as an argument.  The solution showcases how to correctly handle `undefined` to avoid unexpected `NaN` results.  This type of error can be challenging to debug if not aware of JavaScript's loose type system and how it handles undefined values in numerical operations.
